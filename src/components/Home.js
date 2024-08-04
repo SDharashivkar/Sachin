@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRobot, FaShieldAlt, FaChartLine, FaBookOpen, FaMountain, FaRunning } from 'react-icons/fa';
+import { FaBookOpen, FaMountain, FaRunning } from 'react-icons/fa';
 import { GiBoxingGlove } from 'react-icons/gi';
 
 
@@ -26,9 +26,6 @@ const Home = () => {
               Reinforcement Learning Engineer | AI Security Founder
             </p>
             <div className="flex justify-center md:justify-start space-x-4 animate-slide-up animation-delay-400">
-              <IconBox icon={<FaRobot />} text="RL Engineer" />
-              <IconBox icon={<FaShieldAlt />} text="AI Security Founder" />
-              <IconBox icon={<FaChartLine />} text="Algo Trading Agents" />
               <IconBox icon={<GiBoxingGlove />} text="MMA Fighter" />
               <IconBox icon={<FaMountain />} text="Hiker" />
               <IconBox icon={<FaRunning />} text="Runner" />

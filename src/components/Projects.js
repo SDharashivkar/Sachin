@@ -11,78 +11,68 @@ const Projects = () => {
   role: 'Founder',
   date: 'September 2022 - April 2023',
   icon: <FaSearch className="text-3xl text-blue-500" />,
-  shortDesc: 'Built an AI-powered semantic search engine to improve legal research.',
-  fullDesc: `Seeing how outdated keyword-based legal search engines were, I created IntelLawyer, a smart semantic search platform for legal judgments. I focused on cases from the Supreme Court, Bombay High Court, and Bangalore High Court. The system I built had for that time state-of-the-art retrieval components, like Sentence Transformers encoders and cross-encoders. To put this in context, this is Retrival component of RAG system; deployed before chatGPT was released.
-
-  I faced some tough challenges, like dealing with the cold start problem on serverless infrastructure. Despite this, I successfully launched a working version that attracted 500 initial users. This experience taught me a lot about how users engage with legal tech and what they really need from it.`,
+  shortDesc: 'Built semantic search engine to improve legal research.',
+  fullDesc: "Launched in September 2022, IntelLawyer introduced advanced semantic search for legal judgments from key Indian courts. The system utilized web crawling, custom PDF parsing, and advanced NLP techniques including sentence BERT models for embeddings and cross-encoder for re-ranking. Despite serverless deployment challenges, the project achieved 500 weekly active users. Insights revealed semantic search excelled in niche cases, while keyword-based search with manual ranking sufficed for most scenarios. The project concluded after ChatGPT's release, as new AI opportunities emerged, prompting a decision to build something new.",
   achievements: [
-    'Developed a new kind of search engine that makes legal research easier and more effective',
-    'Solved tricky technical problems in serverless deployment',
-    'Learned valuable lessons about what legal professionals want from tech tools and how to keep users coming back'
+    'Developed a semantic search engine for legal documents using state-of-the-art NLP techniques',
+    'Overcame technical challenges in serverless infrastructure deployment',
+    'Gained insights into user acquisition strategies, particularly through direct engagement with lawyers'
   ]
 },
     {
       id: 'aivetaal',
       title: 'AIVetaal.com',
       role: 'Founder',
-      date: 'December 2021',
+      date: 'December 2021- June 2022',
       icon: <FaGraduationCap className="text-3xl text-green-500" />,
-      shortDesc: 'Pioneered personalized learning using Large Language Models.',
-      fullDesc: `AIVetaal was born from the vision of personalizing learning through Large Language Models. Inspired by advancements in models like GPT-3 and BlenderBot2, I set out to create an AI-powered chatbot for competitive exam preparation.
-
-      Utilizing the T5 model and Dense Passage Retrieval, we built a system capable of generating questions and answers. While we faced challenges in developing a closed-domain chatbot due to data limitations, this project led us to explore innovative applications in quantitative aptitude question-solving, pushing the boundaries of AI in education.`,
+      shortDesc: 'Personalized learning chatbots using Large Language Models.',
+      fullDesc: `AIVetaal, launched in December 2021, aimed to personalize learning using Large Language Models. Inspired by GPT-3 and BlenderBot2, we developed an AI-powered chatbot for competitive exam preparation. We utilized the T5 model with Dense Passage Retrieval for question and answer generation. Facing data limitations, we pivoted to fine-tuning T5 for solving quantitative aptitude questions in GRE and CAT exams. Despite initial success, the project was halted due to the high costs of data acquisition needed for a reliable model.`,
       achievements: [
-        'Developed an AI system for question and answer generation',
         'Successfully fine-tuned T5 model for solving quantitative aptitude questions',
-        'Gained crucial insights into the challenges of AI in education and the importance of data curation'
+        'Recognized the critical importance of data quality and quantity in model development',
+        'Learned to balance ambitious goals with market realities and resource constraints'
       ]
     },
     {
       id: 'jpmorgan',
-      title: 'AI-Powered Equity Trading Agents',
-      role: 'Developer',
-      date: '2020',
+      title: 'Equity Trading Agents',
+      role: 'Primary Developer',
+      date: '2019-2020',
       icon: <FaChartLine className="text-3xl text-purple-500" />,
-      shortDesc: 'Engineered sophisticated AI agents for minimizing market impact in stock trading.',
-      fullDesc: `At JP Morgan Chase's AI acceleration group, I took on the challenge of developing a simulation platform and specialized agents for stock trading, aimed at minimizing market impact during large-scale trades.
-
-      This project involved creating deep learning models to analyze complex stock price patterns and developing multi-agent systems operating across various timescales. We implemented advanced algorithms like DDPG, A2C, and PPO, enabling our agents to make informed trading decisions based on order book analysis and custom reward functions.`,
+      shortDesc: 'Developed sophisticated AI agents for minimizing market impact in stock trading.',
+      fullDesc: `At JP Morgan Chase's AI acceleration group, we developed a sophisticated simulation platform and AI agents to minimize market impact in large-scale stock trades. We created deep learning models to analyze complex stock price patterns and multi-agent systems operating across various timescales. The project involved implementing advanced algorithms including DDPG, A2C, and PPO. These agents made informed trading decisions based on order book analysis and custom reward functions, effectively navigating the challenges of continuous control.`,
       achievements: [
-        'Developed a sophisticated simulation platform for stock trading',
-        'Implemented multiple RL algorithms (DDPG, A2C, PPO) for trading agents',
-        'Created agents capable of minimizing market impact in large-scale stock trades'
+        'Developed deep learning models for analyzing intricate stock price patterns',
+        'Engineered a reward function within the simulator to guide market impact minimization',
+        'Created multi-agent systems capable of operating across different trading timescales'
       ]
     },
     {
       id: 'overcooked',
-      title: 'Overcooked Game AI Agent',
-      role: 'Primary Developer',
-      date: '2019',
+      title: 'Overcooked Game playing Agent',
+      role: 'Developer',
+      date: '2018',
       icon: <FaRobot className="text-3xl text-red-500" />,
-      shortDesc: 'Crafted an AI agent mastering the cooperative cooking game Overcooked.',
-      fullDesc: `At Unity, I spearheaded a project to showcase Reinforcement Learning capabilities by integrating AI agents into the cooperative cooking game, Overcooked. This initiative aimed to revolutionize game testing and enhance non-playing character development.
-
-      Leveraging natural language to represent the game state, we employed Trial-based Heuristic Tree Search to generate a comprehensive action-value dataset. This data trained a neural network achieving over 90% test accuracy, resulting in an agent that could successfully navigate the complexities of Overcooked gameplay.`,
+      shortDesc: 'Trained an AI agent mastering the cooperative cooking game Overcooked.',
+      fullDesc: `At Unity, we developed a Reinforcement Learning agent for the cooperative cooking game Overcooked, aiming to advance game testing and NPC development. We represented the game state using natural language and employed Trial-based Heuristic Tree Search to generate a comprehensive action-value dataset. This data trained a neural network to predict optimal game actions, achieving over 90% test accuracy. The resulting agent successfully navigated the complex, cooperative gameplay of Overcooked, demonstrating the potential of agents in understanding and mastering intricate game environments.`,
       achievements: [
-        'Developed an RL agent for the complex, cooperative game Overcooked',
-        'Implemented Trial-based Heuristic Tree Search for action-value generation',
-        'Achieved over 90% test accuracy in predicting optimal game actions'
+        'Trained RL agents for game testing and intelligent NPC development',
+        'Implemented natural language representation of complex game states',
+        'Achieved high accuracy in predicting optimal game actions through neural network training'
       ]
     },
     {
       id: 'doom',
-      title: 'Doom Game AI Agent',
-      role: 'Primary Developer',
+      title: 'Agents to play Doom Game',
+      role: 'Developer',
       date: '2016',
       icon: <FaGamepad className="text-3xl text-yellow-500" />,
-      shortDesc: 'Pioneered one of the early Deep RL agents for playing Doom.',
-      fullDesc: `In the early days of deep learning, I embarked on an ambitious project to train a Deep Reinforcement Learning Agent for the Doom game, a feat accomplished by only a few teams at the time.
-
-      I implemented DQN (Deep Q-Network) and A3C (Asynchronous Advantage Actor-Critic) algorithms using Lua Torch. The agent displayed fascinating emergent behaviors, such as strategic corner-hiding and precise enemy attacks, showcasing the potential of deep reinforcement learning in gaming environments.`,
+      shortDesc: 'Trained one of the early Deep RL agents for playing Doom.',
+      fullDesc: "In 2016, I tackled the cutting-edge challenge of training a Deep Reinforcement Learning Agent for the Doom game, a feat achieved by only a few teams globally at that time. The project involved navigating a complex 3D environment with sparse rewards, making it particularly challenging for Reinforcement Learning Agents. I implemented DQN (Deep Q-Network) and A3C (Asynchronous Advantage Actor-Critic) algorithms using Lua Torch. Despite the difficult learning conditions, the agent developed remarkable emergent behaviors, including strategic corner-hiding and precise enemy attacks. This project pushed the boundaries of RL agents in gaming, demonstrating the potential of deep reinforcement learning in complex, dynamic environments.",
       achievements: [
-        'Developed one of the early successful Deep RL agents for Doom',
-        'Implemented DQN and A3C algorithms from scratch',
-        'Observed and analyzed complex emergent behaviors in the trained agent'
+        'Implemented advanced RL algorithms (DQN, A3C) from scratch using Lua Torch',
+        'Overcame challenges of training agents in complex 3D environments with sparse rewards',
+        'Observed and analyzed sophisticated emergent agent behaviors in game environments'
       ]
     }
   ];
@@ -134,7 +124,7 @@ const Projects = () => {
         </div>
         <div className="mt-16 text-center">
           <p className="text-xl text-gray-700">
-            Intrigued by the possibilities of AI? Let's connect and explore groundbreaking ideas together!
+            Curious about Generative AI Applications or AI Security? Let's talk!
           </p>
           <a href="mailto:sachin.dharashivkar@gmail.com" className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
             Reach Out
