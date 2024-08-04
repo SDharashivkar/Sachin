@@ -71,13 +71,6 @@ const Books = () => {
       link: "https://en.wikipedia.org/wiki/A_Song_of_Ice_and_Fire",
       category: "Fiction",
       coverUrl: "https://m.media-amazon.com/images/I/51LEuIFYBgL._SY445_SX342_.jpg"
-    },
-    {
-      title: "The Fountainhead",
-      author: "Ayn Rand",
-      link: "https://www.amazon.in/Fountainhead-Ayn-Rand-ebook/dp/B002OSXDAU",
-      category: "Fiction",
-      coverUrl: "https://m.media-amazon.com/images/I/912N-A-rtxL._SY342_.jpg"
     }
   ];
 

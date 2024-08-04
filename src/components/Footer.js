@@ -1,6 +1,19 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
+const SubstackIcon = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    height="1em"
+    width="1em"
+    {...props}
+  >
+    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+  </svg>
+);
+
+
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8">
@@ -13,9 +26,10 @@ const Footer = () => {
           <div className="flex space-x-4">
             <SocialLink href="tel:+91-9420377689" icon={<FaPhoneAlt />} label="Phone" />
             <SocialLink href="mailto:sachin.dharashivkar@gmail.com" icon={<FaEnvelope />} label="Email" />
-            <SocialLink href="https://twitter.com/s16r442" icon={<FaTwitter />} label="Twitter" />
+            <SocialLink href="https://twitter.com/sachdh" icon={<FaTwitter />} label="Twitter" />
             <SocialLink href="https://www.linkedin.com/in/sachin-dharashivkar/" icon={<FaLinkedin />} label="LinkedIn" />
-            <SocialLink href="https://github.com/your-github-username" icon={<FaGithub />} label="GitHub" />
+            <SocialLink href="https://github.com/SDharashivkar" icon={<FaGithub />} label="GitHub" />
+            <SocialLink href="https://sachindharashivkar.substack.com/" icon={<SubstackIcon />} label="Substack" />
           </div>
         </div>
         <div className="mt-8 text-center text-sm opacity-75">

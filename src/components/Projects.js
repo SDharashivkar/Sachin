@@ -5,22 +5,22 @@ const Projects = () => {
   const [expandedProject, setExpandedProject] = useState(null);
 
   const projects = [
-    {
-      id: 'intellawyer',
-      title: 'IntelLawyer.com',
-      role: 'Founder',
-      date: 'September 2022',
-      icon: <FaSearch className="text-3xl text-blue-500" />,
-      shortDesc: 'Revolutionized legal research with an AI-powered semantic search engine.',
-      fullDesc: `Inspired by the outdated keyword-based legal search engines, I developed IntelLawyer, a cutting-edge semantic search engine for legal judgments. Focusing on cases from the Supreme Court, Bombay High Court, and Bangalore High Court, I engineered a sophisticated system that combined web crawling, custom PDF parsing, and advanced NLP techniques like sentence BERT models and cross-encoders for re-ranking.
+{
+  id: 'intellawyer',
+  title: 'IntelLawyer.com',
+  role: 'Founder',
+  date: 'September 2022 - April 2023',
+  icon: <FaSearch className="text-3xl text-blue-500" />,
+  shortDesc: 'Built an AI-powered semantic search engine to improve legal research.',
+  fullDesc: `Seeing how outdated keyword-based legal search engines were, I created IntelLawyer, a smart semantic search platform for legal judgments. I focused on cases from the Supreme Court, Bombay High Court, and Bangalore High Court. The system I built had for that time state-of-the-art retrieval components, like Sentence Transformers encoders and cross-encoders. To put this in context, this is Retrival component of RAG system; deployed before chatGPT was released.
 
-      Despite facing challenges like the cold start problem on serverless infrastructure, I successfully launched an MVP that garnered interest from 500 initial users. This journey taught me invaluable lessons about user engagement and the nuanced needs of the legal tech market.`,
-      achievements: [
-        'Developed a revolutionary semantic search engine for legal judgments',
-        'Overcame technical challenges in serverless deployment',
-        'Gained insights into legal tech market needs and user retention strategies'
-      ]
-    },
+  I faced some tough challenges, like dealing with the cold start problem on serverless infrastructure. Despite this, I successfully launched a working version that attracted 500 initial users. This experience taught me a lot about how users engage with legal tech and what they really need from it.`,
+  achievements: [
+    'Developed a new kind of search engine that makes legal research easier and more effective',
+    'Solved tricky technical problems in serverless deployment',
+    'Learned valuable lessons about what legal professionals want from tech tools and how to keep users coming back'
+  ]
+},
     {
       id: 'aivetaal',
       title: 'AIVetaal.com',
@@ -90,9 +90,9 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 py-20">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">My AI Journey: A Timeline of Innovations</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">My Project Portfolio</h1>
         <p className="text-xl text-center mb-12 text-gray-600">
-          Exploring the frontiers of AI through groundbreaking projects and innovative applications.
+          A collection of RL and LLM projects that showcase my AI expertise
         </p>
         <div className="space-y-12">
           {projects.map((project) => (
