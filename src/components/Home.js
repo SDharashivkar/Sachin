@@ -25,12 +25,6 @@ const Home = () => {
             <p className="text-xl md:text-2xl mb-6 animate-slide-up animation-delay-200 text-gray-700">
               Reinforcement Learning Engineer | AI Security Founder
             </p>
-            <div className="flex justify-center md:justify-start space-x-4 animate-slide-up animation-delay-400">
-              <IconBox icon={<GiBoxingGlove />} text="MMA Fighter" />
-              <IconBox icon={<FaMountain />} text="Hiker" />
-              <IconBox icon={<FaRunning />} text="Runner" />
-              <IconBox icon={<FaBookOpen />} text="Bookworm" />
-            </div>
           </div>
         </div>
         <div className="mt-12 bg-white bg-opacity-60 backdrop-blur-md rounded-lg p-8 animate-fade-in animation-delay-600 shadow-lg">
