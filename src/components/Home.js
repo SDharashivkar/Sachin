@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaBookOpen, FaMountain, FaRunning } from 'react-icons/fa';
-import { GiBoxingGlove } from 'react-icons/gi';
 
 
 const Home = () => {
