@@ -55,11 +55,5 @@ const Home = () => {
   );
 };
 
-const IconBox = ({ icon, text }) => (
-  <div className="flex flex-col items-center">
-    <div className="text-3xl mb-2 text-blue-600">{icon}</div>
-    <div className="text-sm text-gray-700">{text}</div>
-  </div>
-);
 
 export default Home;
